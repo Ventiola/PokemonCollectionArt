@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id" class="h-full dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pokemon Art Collection</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* small visual tweaks */
+      .glass {
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(255, 255, 255, 0.01)
+        );
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gray-900 text-gray-100 antialiased">
+    <!-- NAVBAR -->
+    <header class="w-full border-b border-gray-800">
+      <nav
+        class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <h1 class="text-lg font-semibold">Artisan</h1>
+        </div>
+        <div class="flex items-center gap-3">
+
+          
+        </div>
+      </nav>
+    </header>
+
+    <!-- BODY -->
+    <main class="max-w-6xl mx-auto px-4 py-8 space-y-8">
+      <!-- Row of small horizontal rectangular boxes (7) -->
+      <section class="p-4">
+        <h2 class="text-xl mb-2">All Tagsz</h2>
+        <div id="tag-container" class="flex flex-wrap gap-2"></div>
+      </section>
+
+      <!-- Grid of cards (8) -->
+      <section>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 " id="cardContainer"
+        >
+                  
+        </div>
+      </section>
+    </main>
+
+    
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="script-index.js"></script>
+  </body>
+</html>
